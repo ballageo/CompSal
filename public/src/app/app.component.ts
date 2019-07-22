@@ -1,14 +1,17 @@
-import { Component } from '@angular/core';
-import chuck from "../assets/data/comp_sal.json";
+import { Component, OnInit, ViewEncapsulation } from '@angular/core';
+
+
 
 
 @Component({
   selector: 'app-root',
+  encapsulation: ViewEncapsulation.None,
   templateUrl: './app.component.html',
   styleUrls: ['./app.component.css']
 })
 export class AppComponent {
   title = 'public';
+
   all_50_A_MEAN = []
   
   constructor(){
@@ -31,5 +34,3 @@ export class AppComponent {
       }
     }
   }
-  
-

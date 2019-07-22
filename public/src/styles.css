@@ -1,1 +1,9 @@
 /* You can add global styles to this file, and also import other style files */
+g :hover {
+    fill-opacity: .8;
+}
+
+g {
+    fill: navy;
+}
+
