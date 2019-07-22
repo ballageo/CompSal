@@ -9,9 +9,42 @@
  <script src='https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js'></script>
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <link rel="icon" type="image/x-icon" href="favicon.ico">
+  <script>
+  $(document).ready(function() {
+    $(".dropdown-trigger").dropdown();
+  })
+  </script>
 </head>
 <body>
-  <app-root></app-root>
-<script src='https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/js/materialize.min.js'></script>
-</body>
+  <!-- <div class="container">
+    <nav>
+      <div class="nav-wrapper">
+        <span class="brand-logo left">CompSal</span>
+        <ul id="nav-mobile" class="right">
+          <li><a href="#!" class="dropdown-trigger flow-text" data-target="dropdown1">Accessibility <i class="material-icons right">arrow_drop_down</i></a></li>
+        </ul>
+        <ul id="dropdown1" class="dropdown-content">
+          <li><a href="#!">Normal</a></li>
+          <li><a href="#!">Deuteranopia</a></li>
+          <li><a href="#!">Tritanopia</a></li>
+          <li><a href="#!" (click)="clicked=1">Monochromacy</a></li>
+        </ul>
+      </div>
+    </nav> -->
+    <!-- <div class="row">
+      <div class="col s8">
+        <div class="row"> -->
+          <app-root></app-root>
+        <!-- </div>
+      </div>
+      <div class="col-s4">
+        <div class="row">
+          <h4>Copmarison info</h4>
+        </div>
+      </div>
+    </div> -->
+    <script src='https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/js/materialize.min.js'></script>
+    
+  <!-- </div> -->
+  </body>
 </html>

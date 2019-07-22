@@ -9,7 +9,6 @@ import chuck from "../assets/data/comp_sal.json";
 })
 export class AppComponent {
   title = 'public';
-
   all_50_A_MEAN = []
   
   constructor(){
@@ -34,4 +33,3 @@ export class AppComponent {
   }
   
 
-}

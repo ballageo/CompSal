@@ -1,10 +1,26 @@
-<!--The content below is only a placeholder and can be replaced.-->
-<div style="text-align:center">
-  <h1>
-    Welcome to {{ title }}!
-  </h1>
-  <ul>
-    <li *ngFor="let job of all_50_A_MEAN">In {{job['STATE']}}, the {{job['OCC_TITLE']}} makes ${{job['A_MEAN']}} Monehs!</li>
-  </ul>
-
-<router-outlet></router-outlet>
+<div class="container">
+  <div class="row">
+  <nav>
+    <div class="nav-wrapper">
+      <span class="brand-logo left">CompSal</span>
+      <ul id="nav-mobile" class="right">
+        <li><a href="#!" class="dropdown-trigger flow-text" data-target="dropdown1">Accessibility <i class="material-icons right">arrow_drop_down</i></a></li>
+      </ul>
+      <ul id="dropdown1" class="dropdown-content">
+        <li><a href="#!">Normal</a></li>
+        <li><a href="#!">Deuteranopia</a></li>
+        <li><a href="#!">Tritanopia</a></li>
+        <li><a href="#!" (click)="clicked=1">Monochromacy</a></li>
+      </ul>
+    </div>
+  </nav>
+    <div class="col s8">
+        <app-map></app-map>
+          <router-outlet></router-outlet>
+    </div>
+    <div class="col s4">
+        <h4>Comparison info</h4>
+        <app-comparison *ngIf="clicked"></app-comparison>
+    </div>
+  </div>
+</div>
