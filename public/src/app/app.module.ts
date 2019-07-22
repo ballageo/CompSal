@@ -3,10 +3,16 @@ import { NgModule } from '@angular/core';
 
 import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
+import { MapComponent } from './map/map.component';
+import { StateInfoComponent } from './state-info/state-info.component';
+import { ComparisonComponent } from './comparison/comparison.component';
 
 @NgModule({
   declarations: [
-    AppComponent
+    AppComponent,
+    MapComponent,
+    StateInfoComponent,
+    ComparisonComponent
   ],
   imports: [
     BrowserModule,
