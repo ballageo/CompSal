@@ -1,4 +1,5 @@
 import { Component, OnInit, ViewEncapsulation } from '@angular/core';
+import chuck from "../assets/data/comp_sal.json"
 
 
 
@@ -34,3 +35,4 @@ export class AppComponent {
       }
     }
   }
+}

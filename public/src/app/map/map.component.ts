@@ -18,7 +18,7 @@ export class MapComponent implements OnInit {
   public ngOnInit(): void {
 
 
-    let width = 900;
+    let width = 960;
     let height = 600;
 
     let svg = d3.select('body').append('svg')
