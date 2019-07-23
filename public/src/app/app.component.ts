@@ -1,11 +1,10 @@
-import { Component, OnInit, ViewEncapsulation } from '@angular/core';
-
+import { Component, OnInit } from '@angular/core';
+import chuck from "../assets/data/comp_sal.json";
 
 
 
 @Component({
   selector: 'app-root',
-  encapsulation: ViewEncapsulation.None,
   templateUrl: './app.component.html',
   styleUrls: ['./app.component.css']
 })
@@ -34,3 +33,4 @@ export class AppComponent {
       }
     }
   }
+}
