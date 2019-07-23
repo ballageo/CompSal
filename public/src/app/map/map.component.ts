@@ -43,10 +43,27 @@ export class MapComponent implements OnInit {
           .enter()
           .append('path')
           .attr("class", "state-borders")
-          .attr('d', path);
+          .attr('d', path)
+          
+
+        svg.selectAll(".statesText")
+        .data(t.feature(data, data.objects.states).features)
+        .enter().append("text")
+        .attr("x", function(d) {
+            return path.centroid(d)[0];
+        })
+        .attr("y", function(d) {
+            return path.centroid(d)[1];
+        })
+        .attr("text-anchor", "middle")
+        .attr("font-size", "12px")
+        .text("foo")
+          
+
         console.log("ending json calling1");
 
       })
       .catch(error=>console.log(error));
   }
+
 }
