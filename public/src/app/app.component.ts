@@ -22,14 +22,14 @@ export class AppComponent {
   getStateData(year, state){
     for(var job of chuck){
       if(job['Year'] ==  year && job['ST'] == state){
-        console.log(job)
+        // console.log(job)
       }
     }
   }
   getYearData(year){
     for(var job of chuck){
       if(job['Year'] == year && job['A_MEAN'] != "*"){
-        console.log(chuck[0]['OCC_CODE'] == "15-0000")
+        // console.log(chuck[0]['OCC_CODE'] == "15-0000")
         this.all_50_A_MEAN.push(job)
       }
     }
